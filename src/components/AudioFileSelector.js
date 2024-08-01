@@ -182,7 +182,7 @@ const AudioFileSelector = ({
 							<div className="w-full flex justify-between items-center gap-x-5">
 								<div className="grow">
 									<span className="block text-xs text-gray-500">
-										Repeat Selected Verse
+										Repeat Selected Verses
 									</span>
 									<input
 										className="w-full p-0 bg-transparent border-0 text-gray-800 focus:ring-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
