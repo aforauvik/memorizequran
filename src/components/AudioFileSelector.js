@@ -269,7 +269,7 @@ const AudioFileSelector = ({
 								Uncheck All
 							</button>
 						</div>
-						<div className="flex justify-center mt-4">
+						<div className="flex justify-center mt-4 mb-4">
 							<button
 								className="w-full start-button sticky py-4 px-4 bg-blue-500 text-white text-base font-medium rounded-lg shadow-sm hover:bg-blue-600 focus:outline-none focus:bg-blue-600 disabled:opacity-50 disabled:pointer-events-none"
 								onClick={handleSetRepeatOptionsClick}
