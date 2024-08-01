@@ -98,7 +98,7 @@ const AudioFileSelector = ({
 			</div>
 			<div className="sticky bottom-0 bg-white border-t border-gray-200 py-2 px-3">
 				<div className="flex justify-between items-center mb-4">
-					<span className="text-sm text-gray-400 font-base">
+					<span className="text-base text-gray-800 font-base">
 						Audio Controls
 					</span>
 					<button
