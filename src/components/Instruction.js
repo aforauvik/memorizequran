@@ -1,10 +1,10 @@
 const Instruction = () => {
 	return (
 		<div class="mt-8 mb-10">
-			<span class="inline-flex rounded-lg shadow-sm mb-4 font-medium text-sm text-gray-500 font-mono mb-3">
+			<span class="inline-flex rounded-lg shadow-sm mb-4 font-medium text-sm text-gray-500 dark:text-neutral-400 font-mono mb-3">
 				Instruction
 			</span>
-			<ul class="list-disc list-inside text-gray-800">
+			<ul class="list-disc list-inside text-gray-800 dark:text-neutral-400">
 				<li>Choose a Surah you wish to memorize.</li>
 				<li>Begin with 3 to 5 verses at a time.</li>
 				<li>

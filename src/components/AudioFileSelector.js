@@ -73,21 +73,21 @@ const AudioFileSelector = ({
 					{album.audioFiles.map((file) => (
 						<li
 							key={file.id}
-							className="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
+							className="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-white"
 						>
 							<div className="relative flex items-start w-full">
 								<div className="flex items-center h-5">
 									<input
 										id={`file-${file.id}`}
 										type="checkbox"
-										className="border-gray-200 rounded disabled:opacity-50"
+										className="border-gray-200 rounded disabled:opacity-50 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
 										checked={selectedFiles.includes(file)}
 										onChange={(e) => handleFileSelect(e, file)}
 									/>
 								</div>
 								<label
 									htmlFor={`file-${file.id}`}
-									className="ms-3.5 block w-full text-base text-gray-600"
+									className="ms-3.5 block w-full text-base text-gray-600 dark:text-neutral-300"
 								>
 									{file.name}
 								</label>
@@ -96,9 +96,9 @@ const AudioFileSelector = ({
 					))}
 				</ul>
 			</div>
-			<div className="sticky bottom-0 bg-white border-t border-gray-200 py-2 px-3">
+			<div className="sticky bottom-0 bg-white border-t border-gray-200 dark:bg-neutral-900 dark:border-neutral-700 py-2 px-3">
 				<div className="flex justify-between items-center mb-4">
-					<span className="text-base text-gray-800 font-base">
+					<span className="text-base text-gray-800 dark:text-neutral-400 font-base">
 						Audio Controls
 					</span>
 					<button
@@ -114,14 +114,14 @@ const AudioFileSelector = ({
 				</div>
 				{isRepeatContainerVisible && (
 					<div>
-						<div className="py-2 px-3 bg-white border border-gray-200 rounded-lg mb-4">
+						<div className="py-2 px-3 bg-white border border-gray-200 rounded-lg mb-4 dark:bg-neutral-900 dark:border-neutral-700">
 							<div className="w-full flex justify-between items-center gap-x-5">
 								<div className="grow">
-									<span className="block text-xs text-gray-500">
+									<span className="block text-xs text-gray-500 dark:text-neutral-400">
 										Repeat Each Verse
 									</span>
 									<input
-										className="w-full p-0 bg-transparent border-0 text-gray-800 focus:ring-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+										className="w-full p-0 bg-transparent border-0 text-gray-800 dark:text-white focus:ring-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
 										style={{"-moz-appearance": "textfield"}}
 										type="number"
 										pattern="[0-9]*"
@@ -135,7 +135,7 @@ const AudioFileSelector = ({
 								<div className="flex justify-end items-center gap-x-1.5">
 									<button
 										type="button"
-										className="size-6 inline-flex justify-center items-center gap-x-2 text-base font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+										className="size-6 inline-flex justify-center items-center gap-x-2 text-base font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
 										aria-label="Decrease"
 										onClick={() =>
 											setLocalFileRepeatCount((prev) => Math.max(prev - 1, 1))
@@ -158,7 +158,7 @@ const AudioFileSelector = ({
 									</button>
 									<button
 										type="button"
-										className="size-6 inline-flex justify-center items-center gap-x-2 text-base font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+										className="size-6 inline-flex justify-center items-center gap-x-2 text-base font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
 										aria-label="Increase"
 										onClick={() => setLocalFileRepeatCount((prev) => prev + 1)}
 									>
@@ -183,11 +183,11 @@ const AudioFileSelector = ({
 							<hr className="my-3" />
 							<div className="w-full flex justify-between items-center gap-x-5">
 								<div className="grow">
-									<span className="block text-xs text-gray-500">
+									<span className="block text-xs text-gray-500 dark:text-neutral-400">
 										Repeat Selected Verses
 									</span>
 									<input
-										className="w-full p-0 bg-transparent border-0 text-gray-800 focus:ring-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+										className="w-full p-0 bg-transparent border-0 text-gray-800 dark:text-white focus:ring-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
 										style={{"-moz-appearance": "textfield"}}
 										type="number"
 										pattern="[0-9]*"
@@ -202,7 +202,7 @@ const AudioFileSelector = ({
 								<div className="flex justify-end items-center gap-x-1.5">
 									<button
 										type="button"
-										className={`size-6 inline-flex justify-center items-center gap-x-2 text-base font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none ${
+										className={`size-6 inline-flex justify-center items-center gap-x-2 text-base font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none ${
 											!areMultipleFilesSelected ? "cursor-not-allowed" : ""
 										}`}
 										aria-label="Decrease"
@@ -229,7 +229,7 @@ const AudioFileSelector = ({
 									</button>
 									<button
 										type="button"
-										className={`size-6 inline-flex justify-center items-center gap-x-2 text-base font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none ${
+										className={`size-6 inline-flex justify-center items-center gap-x-2 text-base font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none ${
 											!areMultipleFilesSelected ? "cursor-not-allowed" : ""
 										}`}
 										aria-label="Increase"

@@ -48,7 +48,7 @@ const App = () => {
 	const currentYear = currentDate.getFullYear();
 
 	return (
-		<div className="App bg-neutral-50">
+		<div className="App bg-neutral-50 dark:bg-neutral-950">
 			<div className="mb-4">
 				<Navbar />
 			</div>
