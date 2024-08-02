@@ -5,4 +5,6 @@ module.exports = {
 		extend: {},
 	},
 	plugins: [require("preline/plugin"), require("@tailwindcss/forms")],
+	darkMode: "media",
+	darkMode: "class",
 };
