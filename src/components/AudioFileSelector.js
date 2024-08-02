@@ -180,7 +180,7 @@ const AudioFileSelector = ({
 									</button>
 								</div>
 							</div>
-							<hr className="my-3" />
+							<hr className="my-3 dark:border-neutral-700" />
 							<div className="w-full flex justify-between items-center gap-x-5">
 								<div className="grow">
 									<span className="block text-xs text-gray-500 dark:text-neutral-400">
