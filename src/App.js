@@ -8,6 +8,7 @@ import AudioFileSelector from "./components/AudioFileSelector";
 import AudioPlayer from "./components/AudioPlayer";
 import Navbar from "./components/Navbar";
 import Coffee from "./components/Coffee";
+import Instruction from "./components/Instruction";
 
 const App = () => {
 	const [selectedAlbumId, setSelectedAlbumId] = useState(null);
@@ -72,6 +73,8 @@ const App = () => {
 					onStopPlayback={handleStopPlayback}
 				/>
 			)}
+
+			<Instruction />
 
 			<p className="footer">
 				<Coffee />
