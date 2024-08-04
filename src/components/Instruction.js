@@ -10,11 +10,20 @@ const Instruction = () => {
 				<li>
 					Repeat each verse 3 times, and the entire set of verses 5 times.
 				</li>
+				<li>Listen to the audio for the first two repetitions.</li>
+				<li>On the third repetition, recite along with the audio.</li>
 				<li>
-					Listen to the audio for the first two repetitions, and on the third,
-					recite along with the audio.
+					Use{" "}
+					<a
+						className="text-blue-600 hover:text-blue-500 decoration-2 hover:underline focus:outline-none focus:underline opacity-90"
+						target="_blank"
+						href="https://thrive.arizona.edu/news/adding-spaced-repetition-your-study-toolkit"
+					>
+						Spaced repetition{" "}
+					</a>
+					learning technique.
 				</li>
-				<li>Continue repeating until you can recite the verses from memory.</li>
+				<li>Continue learning until you can recite the verses from memory.</li>
 			</ul>
 		</div>
 	);
