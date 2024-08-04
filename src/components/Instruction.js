@@ -19,7 +19,7 @@ const Instruction = () => {
 						target="_blank"
 						href="https://thrive.arizona.edu/news/adding-spaced-repetition-your-study-toolkit"
 					>
-						Spaced repetition{" "}
+						spaced repetition{" "}
 					</a>
 					learning technique.
 				</li>
