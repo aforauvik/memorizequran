@@ -129,6 +129,7 @@ const AudioFileSelector = ({
 										value={localFileRepeatCount}
 										onChange={handleFileRepeatCountChange}
 										min="1"
+										max="100"
 										aria-roledescription="Number field"
 									/>
 								</div>
@@ -195,6 +196,7 @@ const AudioFileSelector = ({
 										value={localAlbumRepeatCount}
 										onChange={handleAlbumRepeatCountChange}
 										min="1"
+										max="100"
 										aria-roledescription="Number field"
 										disabled={!areMultipleFilesSelected} // Disable if less than 2 files are selected
 									/>
