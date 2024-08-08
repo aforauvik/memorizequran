@@ -116,7 +116,7 @@ const Navbar = () => {
 						<a
 							className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
 							target="_blank"
-							href="https://buymeacoffee.com/auvik/membership"
+							href="https://buymeacoffee.com/listenlearnquran/membership"
 						>
 							Donate
 						</a>
